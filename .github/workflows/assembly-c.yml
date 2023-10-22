@@ -20,4 +20,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          path: build/KernelOS.iso
+          name: KernelOS
+          path: build/KernelOS*.iso
