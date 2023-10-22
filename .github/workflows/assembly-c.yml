@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run build script
-        run: ./build.sh
+        run: | 
+          chmod +x ./build.sh
+          ./build.sh
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
