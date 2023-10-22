@@ -7,11 +7,10 @@ jobs:
     name: Build KernelOS
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
       - name: Run build script
-        run: | 
-          ls
-          chmod +x ./build.sh
-          ./build.sh
+        run: ./build.sh
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
