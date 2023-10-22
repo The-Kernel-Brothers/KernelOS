@@ -1,3 +1,6 @@
+#make obj folder
+mkdir -p obj
+
 #assemble boot.s file
 as --32 ./src/boot.s -o ./obj/boot.o
 
