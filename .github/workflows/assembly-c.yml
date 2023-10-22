@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: Install 32-bit GCC libraries
+        run: sudo apt-get install gcc-multilib -y
       - name: Run build script
         run: ./build.sh
       - name: Upload artifact
