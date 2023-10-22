@@ -1,5 +1,4 @@
 #include "kernel.h"
-#include <ncurses.h> // Include the ncurses library header.
 
 /*
 16 bit video buffer elements(register ax)
