@@ -13,6 +13,8 @@ jobs:
         run: sudo apt-get install gcc-multilib -y
       - name: Install Xorriso
         run: sudo apt-get install xorriso -y
+      - name: Install GNU Mtools
+        run: sudo apt-get install mtools -y
       - name: Run build script
         run: ./build.sh
       - name: Upload artifact
