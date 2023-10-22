@@ -1,0 +1,15 @@
+name: Assembly/C CI
+on:
+  push:
+  pull_request:
+jobs:
+  build:
+    name: Build KernelOS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run build script
+        run: ./build.sh
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: build/KernelOS.iso
