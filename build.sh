@@ -1,5 +1,6 @@
-#make obj folder
+#make folders
 mkdir -p obj
+mkdir -p build
 
 #assemble boot.s file
 as --32 ./src/boot.s -o ./obj/boot.o
@@ -17,5 +18,4 @@ grub-file --is-x86-multiboot ./build/KernelOS-i386.bin
 mkdir -p isodir/boot/grub
 cp ./build/KernelOS-i386.bin isodir/boot/KernelOS-i386.bin
 cp ./grub.cfg isodir/boot/grub/grub.cfg
-mkdir -p build
 grub-mkrescue -o ./build/KernelOS-i386.iso isodir
