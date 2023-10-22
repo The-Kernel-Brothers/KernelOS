@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Run build script
         run: | 
+          ls
           chmod +x ./build.sh
           ./build.sh
       - name: Upload artifact
