@@ -81,4 +81,9 @@ void kernel_entry()
   vga_buffer[30] = vga_entry('p', GREEN, BLACK);
   vga_buffer[31] = vga_entry('r', GREEN, BLACK);
   vga_buffer[32] = vga_entry('o', GREEN, BLACK);
+  vga_buffer[33] = vga_entry(' ', WHITE, BLACK);
+  vga_buffer[34] = vga_entry('a', WHITE, BLACK);
+  vga_buffer[35] = vga_entry('n', WHITE, BLACK);
+  vga_buffer[36] = vga_entry('d', WHITE, BLACK);
+  vga_buffer[37] = vga_entry(' ', WHITE, BLACK);
 }
